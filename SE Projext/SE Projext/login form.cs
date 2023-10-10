@@ -60,15 +60,15 @@ namespace SE_Projext
 
                     txtName.Text = getCurrentUser().ToString();
 
-                    //var con = Configuration.getInstance().getConnection();
-                    //SqlCommand cmd = new SqlCommand("INSERT INTO Project values( 1, @ProjectName, @Description,  @OwnerID,@CreatedDate )", con);
-                    //cmd.Parameters.AddWithValue("@ProjectName", txtName.Text);
-                    //cmd.Parameters.AddWithValue("@Description", txtDescription.Text);
-                    //cmd.Parameters.AddWithValue("@OwnerID",getCurrentUser());
-                    //cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now);
+                    var con = Configuration.getInstance().getConnection();
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Project values( (Select Max (ProjectID) from Project)+1, @ProjectName, @Description,  @OwnerID,@CreatedDate )", con);
+                    cmd.Parameters.AddWithValue("@ProjectName", txtName.Text);
+                    cmd.Parameters.AddWithValue("@Description", txtDescription.Text);
+                    cmd.Parameters.AddWithValue("@OwnerID", getCurrentUser());
+                    cmd.Parameters.AddWithValue("@CreatedDate", DateTime.Now);
 
-                    //cmd.ExecuteNonQuery();
-                    //MessageBox.Show("Successfully saved");
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Successfully saved");
 
 
 

@@ -55,11 +55,11 @@ namespace SE_Projext.Forms
                         int userId = Convert.ToInt32(result);
 
                         var con1 = Configuration.getInstance().getConnection();
-                        SqlCommand cmd1 = new SqlCommand("INSERT INTO HistoryLogin values( 1, @UserID, @LoginTime)", con1);//Select MAX(LoginID) From HistoryLogin)+
+                        SqlCommand cmd1 = new SqlCommand("INSERT INTO HistoryLogin values(  @UserID, @LoginTime)", con1);//Select MAX(LoginID) From HistoryLogin)+
                         cmd1.Parameters.AddWithValue("@UserID",userId);
                         cmd1.Parameters.AddWithValue("@LoginTime", DateTime.Now);
                       
-                        cmd.ExecuteNonQuery();
+                        cmd1.ExecuteNonQuery();
                         MessageBox.Show("Successfully saved");
                         MessageBox.Show("Login successful. UserID: " + userId);
                         this.Hide();
