@@ -17,7 +17,7 @@ namespace SE_Projext
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SigninSgnup());
+            Application.Run(new Home());
         }
     }
 }
