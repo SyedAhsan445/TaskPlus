@@ -69,6 +69,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(799, 447);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // tableLayoutPanel1
             // 
@@ -98,6 +99,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(799, 447);
             this.tableLayoutPanel1.TabIndex = 16;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // panel9
             // 
@@ -107,6 +109,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(793, 78);
             this.panel9.TabIndex = 0;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // tableLayoutPanel2
             // 
@@ -128,6 +131,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 94.63087F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(793, 78);
             this.tableLayoutPanel2.TabIndex = 2;
+            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // panel3
             // 
@@ -136,6 +140,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1, 1);
             this.panel3.TabIndex = 32;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel7
             // 
@@ -146,6 +151,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(487, 68);
             this.panel7.TabIndex = 31;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // txtDescription
             // 
@@ -157,6 +163,7 @@
             this.txtDescription.Size = new System.Drawing.Size(100, 20);
             this.txtDescription.TabIndex = 25;
             this.txtDescription.Text = "Description";
+            this.txtDescription.Click += new System.EventHandler(this.txtDescription_Click);
             // 
             // panel6
             // 
@@ -165,6 +172,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1, 68);
             this.panel6.TabIndex = 30;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // panel5
             // 
@@ -175,6 +183,7 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(287, 68);
             this.panel5.TabIndex = 29;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // label1
             // 
@@ -186,6 +195,7 @@
             this.label1.Size = new System.Drawing.Size(116, 20);
             this.label1.TabIndex = 27;
             this.label1.Text = "Project Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel4
             // 
@@ -194,6 +204,7 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(487, 1);
             this.panel4.TabIndex = 28;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel2
             // 
@@ -202,6 +213,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(287, 1);
             this.panel2.TabIndex = 26;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // tableLayoutPanel3
             // 
@@ -217,6 +229,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(793, 37);
             this.tableLayoutPanel3.TabIndex = 1;
+            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
             // btnBack
             // 
@@ -252,6 +265,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(793, 295);
             this.panel8.TabIndex = 2;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // dataGridView1
             // 
@@ -296,6 +310,7 @@
             this.NameText.Name = "NameText";
             this.NameText.Size = new System.Drawing.Size(100, 20);
             this.NameText.TabIndex = 28;
+            this.NameText.TextChanged += new System.EventHandler(this.NameText_TextChanged);
             // 
             // DescriptionText
             // 
@@ -305,6 +320,7 @@
             this.DescriptionText.Name = "DescriptionText";
             this.DescriptionText.Size = new System.Drawing.Size(230, 57);
             this.DescriptionText.TabIndex = 29;
+            this.DescriptionText.TextChanged += new System.EventHandler(this.DescriptionText_TextChanged);
             // 
             // login_form
             // 

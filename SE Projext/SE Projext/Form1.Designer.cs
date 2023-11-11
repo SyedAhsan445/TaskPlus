@@ -49,11 +49,12 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel9 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -256,14 +257,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(786, 418);
             this.tableLayoutPanel1.TabIndex = 15;
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "ADD DILE.png");
-            this.imageList1.Images.SetKeyName(1, "FILE.jpeg");
-            this.imageList1.Images.SetKeyName(2, "home-vector-icon.jpg");
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.button8);
@@ -281,9 +274,9 @@
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Blue;
             this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(0, 80);
+            this.button8.Location = new System.Drawing.Point(0, 124);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(182, 40);
+            this.button8.Size = new System.Drawing.Size(182, 62);
             this.button8.TabIndex = 21;
             this.button8.Text = "Manage CLO\'s";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -297,9 +290,9 @@
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Blue;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 40);
+            this.button7.Location = new System.Drawing.Point(0, 62);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(182, 40);
+            this.button7.Size = new System.Drawing.Size(182, 62);
             this.button7.TabIndex = 22;
             this.button7.Text = "Manage Tasks";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -316,7 +309,7 @@
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button9.Location = new System.Drawing.Point(0, 0);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(182, 40);
+            this.button9.Size = new System.Drawing.Size(182, 62);
             this.button9.TabIndex = 20;
             this.button9.Text = "Manage Projects";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -324,11 +317,32 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.Location = new System.Drawing.Point(316, 145);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 42);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "HOME";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "ADD DILE.png");
+            this.imageList1.Images.SetKeyName(1, "FILE.jpeg");
+            this.imageList1.Images.SetKeyName(2, "home-vector-icon.jpg");
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.DrawerShowIconsWhenHidden = true;
             this.Name = "Home";
@@ -339,6 +353,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -362,11 +377,12 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }
 

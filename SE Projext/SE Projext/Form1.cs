@@ -103,5 +103,10 @@ namespace SE_Projext
             addTask temp = new addTask();
             temp.ShowDialog();
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

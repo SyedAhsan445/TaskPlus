@@ -39,9 +39,13 @@
             this.txtDescription = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.NameText = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -50,10 +54,6 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -69,10 +69,10 @@
             // DescriptionText
             // 
             this.DescriptionText.BackColor = System.Drawing.SystemColors.Menu;
-            this.DescriptionText.Location = new System.Drawing.Point(109, 15);
+            this.DescriptionText.Location = new System.Drawing.Point(108, 13);
             this.DescriptionText.Multiline = true;
             this.DescriptionText.Name = "DescriptionText";
-            this.DescriptionText.Size = new System.Drawing.Size(206, 57);
+            this.DescriptionText.Size = new System.Drawing.Size(147, 57);
             this.DescriptionText.TabIndex = 29;
             // 
             // Delete
@@ -122,9 +122,9 @@
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(162, 3);
+            this.panel3.Location = new System.Drawing.Point(227, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(291, 1);
+            this.panel3.Size = new System.Drawing.Size(296, 1);
             this.panel3.TabIndex = 32;
             // 
             // panel7
@@ -132,9 +132,9 @@
             this.panel7.Controls.Add(this.DescriptionText);
             this.panel7.Controls.Add(this.txtDescription);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(459, 8);
+            this.panel7.Location = new System.Drawing.Point(529, 8);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(332, 97);
+            this.panel7.Size = new System.Drawing.Size(262, 97);
             this.panel7.TabIndex = 31;
             // 
             // txtDescription
@@ -142,7 +142,7 @@
             this.txtDescription.AutoSize = true;
             this.txtDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescription.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.txtDescription.Location = new System.Drawing.Point(3, 15);
+            this.txtDescription.Location = new System.Drawing.Point(10, 13);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(100, 20);
             this.txtDescription.TabIndex = 25;
@@ -162,52 +162,91 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.comboBox1);
-            this.panel6.Controls.Add(this.label3);
+            this.panel6.Controls.Add(this.NameText);
+            this.panel6.Controls.Add(this.label1);
             this.panel6.Controls.Add(this.dateTimePicker1);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(162, 8);
+            this.panel6.Location = new System.Drawing.Point(227, 8);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(291, 97);
+            this.panel6.Size = new System.Drawing.Size(296, 97);
             this.panel6.TabIndex = 30;
+            // 
+            // NameText
+            // 
+            this.NameText.BackColor = System.Drawing.SystemColors.Menu;
+            this.NameText.Location = new System.Drawing.Point(95, 52);
+            this.NameText.Name = "NameText";
+            this.NameText.Size = new System.Drawing.Size(100, 20);
+            this.NameText.TabIndex = 28;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(0, 17);
+            this.label1.Location = new System.Drawing.Point(3, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 20);
             this.label1.TabIndex = 27;
             this.label1.Text = "Tite";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(95, 17);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 29;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label2.Location = new System.Drawing.Point(3, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "DeadLine";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.NameText);
-            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Controls.Add(this.comboBox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(3, 8);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(153, 97);
+            this.panel5.Size = new System.Drawing.Size(218, 97);
             this.panel5.TabIndex = 29;
             // 
-            // NameText
+            // label3
             // 
-            this.NameText.BackColor = System.Drawing.SystemColors.Menu;
-            this.NameText.Location = new System.Drawing.Point(45, 17);
-            this.NameText.Name = "NameText";
-            this.NameText.Size = new System.Drawing.Size(100, 20);
-            this.NameText.TabIndex = 28;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label3.Location = new System.Drawing.Point(-4, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 20);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Project";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(79, 15);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(118, 21);
+            this.comboBox1.TabIndex = 32;
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(459, 3);
+            this.panel4.Location = new System.Drawing.Point(529, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(332, 1);
+            this.panel4.Size = new System.Drawing.Size(262, 1);
             this.panel4.TabIndex = 28;
             // 
             // panel2
@@ -215,15 +254,15 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(153, 1);
+            this.panel2.Size = new System.Drawing.Size(218, 1);
             this.panel2.TabIndex = 26;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.86842F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.13158F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 337F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.63261F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.36739F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 267F));
             this.tableLayoutPanel2.Controls.Add(this.panel3, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel7, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.panel6, 1, 1);
@@ -313,45 +352,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(3, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 20);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "DeadLine";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(95, 17);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 29;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(12, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 20);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Project";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(95, 54);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 32;
             // 
             // addTask
             // 
