@@ -17,6 +17,7 @@ namespace SE_Projext.Forms
         public addTask()
         {
             InitializeComponent();
+            reload();
             try
             {
                 var con = Configuration.getInstance().getConnection();
@@ -83,7 +84,7 @@ namespace SE_Projext.Forms
 
 
                     var con = Configuration.getInstance().getConnection();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO Task values( 1,@PID, @Title, @Description,@CreatedDate,@DeadLine )", con);//(Select Max (ProjectID) from Project)+
+                    SqlCommand cmd = new SqlCommand("INSERT INTO Task values( (Select Max (TaskID) from Task)+1,@PID, @Title, @Description,@CreatedDate,@DeadLine )", con);
                     cmd.Parameters.AddWithValue("@PID", comboBox1.Text);
                     cmd.Parameters.AddWithValue("@Title", NameText.Text);
 
@@ -110,13 +111,13 @@ namespace SE_Projext.Forms
         private void reload()
         {
 
-            //// To Reload
-            //var con1 = Configuration.getInstance().getConnection();
-            //SqlCommand cmd1 = new SqlCommand("Select * from Task ", con1);
-            //SqlDataAdapter da = new SqlDataAdapter(cmd1);
-            //DataTable dt = new DataTable();
-            //da.Fill(dt);
-            //dataGridView1.DataSource = dt;
+           
+            var con1 = Configuration.getInstance().getConnection();
+            SqlCommand cmd1 = new SqlCommand("Select * from Task ", con1);
+            SqlDataAdapter da = new SqlDataAdapter(cmd1);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
         public void FindProjectName(String Id)
         {
@@ -131,6 +132,103 @@ namespace SE_Projext.Forms
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Home temp = new Home();
+            temp.ShowDialog();
+        }
+
+        private void DescriptionText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtDescription_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NameText_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

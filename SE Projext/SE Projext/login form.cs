@@ -103,7 +103,7 @@ namespace SE_Projext
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SigninSgnup temp = new SigninSgnup();
+            Home temp = new Home();
             temp.ShowDialog();
         }
 

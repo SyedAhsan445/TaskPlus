@@ -108,5 +108,20 @@ namespace SE_Projext
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddMembers temp = new AddMembers();
+            temp.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SigninSgnup temp = new SigninSgnup();
+            temp.ShowDialog();
+
+        }
     }
 }

@@ -73,6 +73,16 @@ namespace SE_Projext.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap OIP {
+            get {
+                object obj = ResourceManager.GetObject("OIP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_miguel_á_padriñán_19670 {
             get {
                 object obj = ResourceManager.GetObject("pexels-miguel-á-padriñán-19670", resourceCulture);
@@ -96,6 +106,16 @@ namespace SE_Projext.Properties {
         internal static System.Drawing.Bitmap pexels_photo_531880 {
             get {
                 object obj = ResourceManager.GetObject("pexels-photo-531880", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap R {
+            get {
+                object obj = ResourceManager.GetObject("R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
