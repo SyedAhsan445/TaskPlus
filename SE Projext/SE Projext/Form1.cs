@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using SE_Projext.Forms;
 
 namespace SE_Projext
 {
@@ -87,6 +88,20 @@ namespace SE_Projext
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login_form temp = new login_form();
+            temp.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addTask temp = new addTask();
+            temp.ShowDialog();
         }
     }
 }

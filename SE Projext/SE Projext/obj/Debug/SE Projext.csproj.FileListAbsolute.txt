@@ -30,3 +30,4 @@ D:\Semester 5\SE Lab\TaskPlus\SE Projext\SE Projext\obj\Debug\SE Projext.csproj.
 D:\Semester 5\SE Lab\TaskPlus\SE Projext\SE Projext\obj\Debug\SE Projext.csproj.CopyComplete
 D:\Semester 5\SE Lab\TaskPlus\SE Projext\SE Projext\obj\Debug\SE Projext.exe
 D:\Semester 5\SE Lab\TaskPlus\SE Projext\SE Projext\obj\Debug\SE Projext.pdb
+D:\Semester 5\SE Lab\TaskPlus\SE Projext\SE Projext\obj\Debug\SE_Projext.Forms.addTask.resources

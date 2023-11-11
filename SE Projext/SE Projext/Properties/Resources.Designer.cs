@@ -63,6 +63,16 @@ namespace SE_Projext.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ADD_DILE {
+            get {
+                object obj = ResourceManager.GetObject("ADD DILE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pexels_miguel_á_padriñán_19670 {
             get {
                 object obj = ResourceManager.GetObject("pexels-miguel-á-padriñán-19670", resourceCulture);

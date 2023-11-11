@@ -68,6 +68,12 @@
     <Compile Include="Forms\SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Task.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task.Designer.cs">
+      <DependentUpon>Task.cs</DependentUpon>
+    </Compile>
     <Compile Include="login form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task.resx">
+      <DependentUpon>Task.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login form.resx">
       <DependentUpon>login form.cs</DependentUpon>
@@ -120,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pexels-miguel-á-padriñán-19670.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD DILE.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

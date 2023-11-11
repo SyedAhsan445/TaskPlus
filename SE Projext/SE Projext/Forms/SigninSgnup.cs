@@ -63,7 +63,7 @@ namespace SE_Projext.Forms
                         MessageBox.Show("Successfully saved");
                         MessageBox.Show("Login successful. UserID: " + userId);
                         this.Hide();
-                        login_form temp = new login_form();
+                        Home temp = new Home();
                         temp.ShowDialog();
 
 
